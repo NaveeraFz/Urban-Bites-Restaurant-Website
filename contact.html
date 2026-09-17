@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Bites - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="navbar-logo-circle">UB</div>
+            <div class="navbar-logo">Urban <span>Bites</span></div>
+        </div>
+        
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+
+        <div class="navbar-right">
+            <a href="login.html" class="navbar-btn" id="navLoginBtn">Login</a>
+            <div class="navbar-user" id="navUserSection" style="display:none;">
+                <div class="user-avatar" id="navUserAvatar"></div>
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-img">
+            <img src="https://magnifissance.com/wp-content/uploads/2026/06/Amura-by-A%CC%81ngel-Leo%CC%81n-%C2%A9-Claire-Gunn-1.webp" alt="Contact Urban Bites">
+        </div>
+
+        <div class="contact-content">
+            <h2>Get In Touch With Us</h2>
+            <p>We would love to hear from you. Reach out for reservations, inquiries, or just to say hello!</p>
+            
+            <div class="contact-info-item"><span>📍</span> 123 Urban Street, Food District, Karachi</div>
+            <div class="contact-info-item"><span>📞</span> +92 300 1234567</div>
+            <div class="contact-info-item"><span>✉️</span> hello@urbanbites.com</div>
+            <div class="contact-info-item"><span>⏰</span> Mon-Sun: 8:00 AM - 11:00 PM</div>
+            <br>
+
+            <!-- Contact Success Message -->
+            <div id="contactSuccess" style="display:none; background:#d4edda; color:#155724; padding:14px; border-radius:10px; margin-bottom:16px; font-weight:600;">
+                Message sent successfully!
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contactForm">
+                <div class="form-group" style="margin-bottom:16px;">
+                    <label>Your Name</label>
+                    <input type="text" id="contactName" placeholder="Enter your name">
+                    <span class="auth-error" id="contactNameErr">Name is required</span>
+                </div>
+
+                <div class="form-group" style="margin-bottom:16px;">
+                    <label>Email Address</label>
+                    <input type="email" id="contactEmail" placeholder="Enter your email">
+                    <span class="auth-error" id="contactEmailErr">Valid email is required</span>
+                </div>
+
+                <div class="form-group" style="margin-bottom:16px;">
+                    <label>Message</label>
+                    <textarea id="contactMsg" rows="4" placeholder="Write your message here..."></textarea>
+                    <span class="auth-error" id="contactMsgErr">Message is required</span>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <div class="footer-brand">
+                    <div class="footer-logo-circle">UB</div>
+                    <div class="footer-logo">Urban <span>Bites</span></div>
+                </div>
+                <p class="footer-tagline">Fresh ingredients & mouth watering recipes.<br>A passion for good food delivered to your door or ready for pickup.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Mon-Fri: 8am - 10pm</li>
+                    <li>Saturday: 9am - 11pm</li>
+                    <li>Sunday: 10am - 9pm</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Urban Bites. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
